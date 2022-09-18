@@ -80,9 +80,6 @@ section.hero .description {
   display: flex;
   gap: 4.2222222222rem;
 }
-section.hero .description img {
-  width: 100%;
-}
 
 section {
   display: flex;
@@ -137,64 +134,29 @@ section.community a:hover {
 }
 
 @media screen and (max-width: 50rem) {
-  section.hero {
-    padding: 3rem 9.1666666667rem;
+  .description {
     display: flex;
-    flex-wrap: wrap;
-    background-image: url("../../images/bg-hero-desktop.svg");
-    background-repeat: no-repeat;
-    background-color: rgb(235, 251, 255);
+    flex-direction: column;
+    text-align: center;
   }
-  section.hero header {
+  section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100% !important;
-    padding-bottom: 3.9444444444rem;
+    flex-direction: column;
+    text-align: center;
   }
-  section.hero header a {
-    color: rgb(0, 37, 46);
-    font-size: 0.7777777778rem;
-    font-weight: 700;
-    background-color: rgb(255, 255, 255);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-family: "Open Sans", serif;
-    transition: 0.3s;
+  section .image-container {
+    order: 1;
   }
-  section.hero header a:hover {
-    color: rgb(128, 141, 153);
-    background-color: rgb(255, 255, 255);
+  section .content {
+    order: 2;
   }
-  section.hero h1 {
-    font-size: 2.2222222222rem;
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    line-height: 3.3333333333rem;
-    color: rgb(0, 37, 46);
+  section:not(:first-of-type) {
+    padding: 2rem 1.6666666667rem;
   }
-  section.hero header + div a {
-    color: rgb(255, 255, 255);
-    font-size: 0.7777777778rem;
-    font-weight: 700;
-    background-color: rgb(255, 82, 191);
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-family: "Open Sans", serif;
-    transition: 0.3s;
-  }
-  section.hero header + div a:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 82, 191, 0.7);
-  }
-  section.hero .description {
-    display: flex;
-    gap: 4.2222222222rem;
-  }
-  section.hero .description img {
-    width: 100%;
+  section.community {
+    margin: 0 9.1666666667rem;
+    margin-top: 5.5555555556rem;
+    min-width: 27.7777777778rem;
   }
 }
 footer {
