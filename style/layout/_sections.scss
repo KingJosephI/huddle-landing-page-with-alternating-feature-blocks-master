@@ -5,6 +5,10 @@ section.hero {
   padding: rem(54) rem(165);
   display: flex;
   flex-wrap: wrap;
+  background-image: url('../../images/bg-hero-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: $very-pale-cyan;
+
   
   header {
     display: flex;
@@ -28,6 +32,46 @@ section.hero {
     color: $very-dark-cyan;
   }
 
+  
+  header + div a {
+    @include button($white, $pink, $white, rgba(255, 82, 191, 0.7));
+  }
+
+  .description {
+    display: flex;
+    gap: rem(76);
+
+    img{width: 100%;}
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: rem(100);
+
+
+
+  &:not(:first-of-type){
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+    margin: 0 rem(165) rem(50);
+    border-radius: rem(14);
+    padding: rem(36) rem(100);
+  } 
+  
+  &:nth-of-type(2){
+    margin-top: rem(100);
+  }
+
+  h2 {
+    font-size: rem(28);
+    line-height: rem(42);
+    font-weight: 500;
+    font-family: 'Poppins', serif;
+  }
+
   p {
     padding: rem(51) 0;
     line-height: rem(27);
@@ -35,7 +79,7 @@ section.hero {
     color: $grayish-blue;
   }
   
-  header + div a {
-    @include button($white, $pink)
+  img{
+    width: rem(440);
   }
-}
+}  

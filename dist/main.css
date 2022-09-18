@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 18;
+  font-size: 1rem;
 }
 
 ul {
@@ -21,16 +21,17 @@ a {
   text-decoration: none;
 }
 
-section, footer {
-  max-width: 80rem;
+footer {
   padding: 0 9.1666666667rem;
-  width: 100%;
 }
 
 section.hero {
   padding: 3rem 9.1666666667rem;
   display: flex;
   flex-wrap: wrap;
+  background-image: url("../../images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: rgb(235, 251, 255);
 }
 section.hero header {
   display: flex;
@@ -48,6 +49,7 @@ section.hero header a {
   border-radius: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-family: "Open Sans", serif;
+  transition: 0.3s;
 }
 section.hero header a:hover {
   color: rgb(128, 141, 153);
@@ -60,12 +62,6 @@ section.hero h1 {
   line-height: 3.3333333333rem;
   color: rgb(0, 37, 46);
 }
-section.hero p {
-  padding: 2.8333333333rem 0;
-  line-height: 1.5rem;
-  font-size: 1rem;
-  color: rgb(128, 141, 153);
-}
 section.hero header + div a {
   color: rgb(255, 255, 255);
   font-size: 0.7777777778rem;
@@ -75,8 +71,48 @@ section.hero header + div a {
   border-radius: 2rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-family: "Open Sans", serif;
+  transition: 0.3s;
 }
 section.hero header + div a:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(255, 82, 191);
+  background-color: rgba(255, 82, 191, 0.7);
+}
+section.hero .description {
+  display: flex;
+  gap: 4.2222222222rem;
+}
+section.hero .description img {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 5.5555555556rem;
+}
+section:not(:first-of-type) {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 0 9.1666666667rem 2.7777777778rem;
+  border-radius: 0.7777777778rem;
+  padding: 2rem 5.5555555556rem;
+}
+section:nth-of-type(2) {
+  margin-top: 5.5555555556rem;
+}
+section h2 {
+  font-size: 1.5555555556rem;
+  line-height: 2.3333333333rem;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+}
+section p {
+  padding: 2.8333333333rem 0;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: rgb(128, 141, 153);
+}
+section img {
+  width: 24.4444444444rem;
 }/*# sourceMappingURL=main.css.map */

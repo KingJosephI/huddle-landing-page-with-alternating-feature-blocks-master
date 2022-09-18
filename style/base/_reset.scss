@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: $base-font-size;
+  font-size: rem(18);
 }
 
 ul {
@@ -21,8 +21,6 @@ a {
   text-decoration: none;
 }
 
-section, footer {
-  max-width: rem(1440);
+footer {
   padding: 0 rem(165);
-  width: 100%;
 }
