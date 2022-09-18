@@ -42,6 +42,14 @@ section.hero {
   .description {
     display: flex;
     gap: rem(76);
+
+    img{
+      width: rem(700);
+    }
+
+    .image-container{
+      margin-top: rem(-100);
+    }
   }
 }
 
@@ -99,6 +107,13 @@ section.community{
     flex-direction: column;
     text-align: center; 
 
+    img{
+      max-width: 400px !important;
+    }
+
+    .image-container{
+      margin-top: rem(20) !important;
+    }
   }
 
   section {

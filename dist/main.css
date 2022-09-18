@@ -80,6 +80,12 @@ section.hero .description {
   display: flex;
   gap: 4.2222222222rem;
 }
+section.hero .description img {
+  width: 38.8888888889rem;
+}
+section.hero .description .image-container {
+  margin-top: -5.5555555556rem;
+}
 
 section {
   display: flex;
@@ -138,6 +144,12 @@ section.community a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+  .description img {
+    max-width: 400px !important;
+  }
+  .description .image-container {
+    margin-top: 1.1111111111rem !important;
   }
   section {
     display: flex;
