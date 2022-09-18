@@ -1,0 +1,41 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+
+section.hero {
+  padding: rem(54) rem(165);
+  display: flex;
+  flex-wrap: wrap;
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    padding-bottom: rem(71);
+    
+  
+    a {
+      @include button($very-dark-cyan, $white, $grayish-blue)
+    }
+  }
+  
+  
+  h1 {
+    font-size: rem(40);
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    line-height: rem(60);
+    color: $very-dark-cyan;
+  }
+
+  p {
+    padding: rem(51) 0;
+    line-height: rem(27);
+    font-size: rem(18);
+    color: $grayish-blue;
+  }
+  
+  header + div a {
+    @include button($white, $pink)
+  }
+}
