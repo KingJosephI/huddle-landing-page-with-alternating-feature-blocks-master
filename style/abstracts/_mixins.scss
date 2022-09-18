@@ -1,0 +1,16 @@
+@use 'functions' as *;
+
+@mixin button($color, $bg, $hcolor: $color, $hbg:$bg ){
+  color: $color;
+  font-size: rem(14);
+  font-weight: 700;
+  background-color: $bg;
+  padding: rem(18) rem(36);
+  border-radius: rem(36);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  &:hover {
+    color: $hcolor;
+    background-color: $hbg;
+  }
+}
