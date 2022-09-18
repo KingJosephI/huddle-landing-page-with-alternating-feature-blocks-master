@@ -21,10 +21,6 @@ a {
   text-decoration: none;
 }
 
-footer {
-  padding: 0 9.1666666667rem;
-}
-
 section.hero {
   padding: 3rem 9.1666666667rem;
   display: flex;
@@ -115,4 +111,96 @@ section p {
 }
 section img {
   width: 24.4444444444rem;
+}
+
+section.community {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+section.community a {
+  color: rgb(255, 255, 255);
+  font-size: 0.7777777778rem;
+  font-weight: 700;
+  background-color: rgb(255, 82, 191);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: "Open Sans", serif;
+  transition: 0.3s;
+}
+section.community a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 82, 191, 0.7);
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(0, 37, 46);
+  padding: 8rem 9.1666666667rem 3.6111111111rem;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -11.1111111111rem;
+}
+footer * {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", serif;
+  font-size: 0.7777777778rem;
+  line-height: 1.3333333333rem;
+}
+footer > *, footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer i {
+  font-size: 1.1111111111rem;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5555555556rem;
+}
+footer .contact-1 {
+  align-items: flex-start;
+}
+footer .contact-1 i:first-of-type {
+  margin-top: 0.5555555556rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .links {
+  justify-self: center;
+}
+footer .fa-phone-volume {
+  transform: rotate(-40deg);
+}
+footer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  margin-bottom: 2.7777777778rem;
+}
+.social-media div {
+  width: 1.7777777778rem;
+  height: 1.7777777778rem;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media div:not(:last-of-type) {
+  margin-right: 0.5555555556rem;
+}
+.social-media i {
+  padding: 0.5555555556rem;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */

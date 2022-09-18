@@ -8,7 +8,6 @@ section.hero {
   background-image: url('../../images/bg-hero-desktop.svg');
   background-repeat: no-repeat;
   background-color: $very-pale-cyan;
-
   
   header {
     display: flex;
@@ -16,7 +15,6 @@ section.hero {
     align-items: center;
     width: 100% !important;
     padding-bottom: rem(71);
-    
   
     a {
       @include button($very-dark-cyan, $white, $grayish-blue)
@@ -31,10 +29,10 @@ section.hero {
     line-height: rem(60);
     color: $very-dark-cyan;
   }
-
   
   header + div a {
-    @include button($white, $pink, $white, rgba(255, 82, 191, 0.7));
+    @include button($white, $pink,
+     $white, rgba(255, 82, 191, 0.7));
   }
 
   .description {
@@ -49,8 +47,6 @@ section {
   display: flex;
   align-items: center;
   gap: rem(100);
-
-
 
   &:not(:first-of-type){
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -83,3 +79,15 @@ section {
     width: rem(440);
   }
 }  
+
+section.community{
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  a{
+    @include button($white, $pink, $white, rgba(255, 82, 191, 0.7))
+  }
+  z-index: 100;
+}
+
