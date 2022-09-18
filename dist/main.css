@@ -239,5 +239,20 @@ footer .social-media i {
   footer {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: -5.5555555556rem;
+    padding: 8rem 2.5rem 3.6111111111rem;
+  }
+  footer .logo-container {
+    margin-top: 5.5555555556rem;
+  }
+  footer .links {
+    justify-self: start;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media + div {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

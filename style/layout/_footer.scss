@@ -57,7 +57,9 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }.social-media {
+  }
+  
+.social-media {
   display: flex;
   margin-bottom: rem(50);
 
@@ -96,5 +98,24 @@ footer{
   footer {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: rem(-100);
+    padding: rem(144) rem(45) rem(65);
+
+  .logo-container{
+    margin-top: rem(100);
+  }
+  
+  .links {
+    justify-self: start;
+  }
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+  
+    + div {
+      text-align: center;
+    }
   }
 }
