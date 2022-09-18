@@ -54,19 +54,11 @@ footer{
   }
 
   > div:last-child{
-    // background-color: yellowgreen;
-    // height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-}
-
-.social-media {
+  }.social-media {
   display: flex;
-  // justify-content: center;
-  // flex-direction: row;
-  // align-items: center;
   margin-bottom: rem(50);
 
   div{
@@ -81,10 +73,28 @@ footer{
     &:not(:last-of-type){
       margin-right: rem(10);
     }
+
+    &:hover{
+      border-color: $pink;
+      cursor: pointer;
+       i{
+        color: $pink;
+       }
+    }
   }
 
   i {
     padding: rem(10);
     font-size: rem(18);
+  }
+}
+
+
+}
+
+@media screen and (max-width: rem(900)) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

@@ -36,6 +36,9 @@ section.hero header {
   width: 100% !important;
   padding-bottom: 3.9444444444rem;
 }
+section.hero header img {
+  width: 11.1111111111rem;
+}
 section.hero header a {
   color: rgb(0, 37, 46);
   font-size: 0.7777777778rem;
@@ -87,8 +90,6 @@ section {
   gap: 5.5555555556rem;
 }
 section:not(:first-of-type) {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 0 9.1666666667rem 2.7777777778rem;
   border-radius: 0.7777777778rem;
@@ -135,6 +136,67 @@ section.community a:hover {
   background-color: rgba(255, 82, 191, 0.7);
 }
 
+@media screen and (max-width: 50rem) {
+  section.hero {
+    padding: 3rem 9.1666666667rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../../images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: rgb(235, 251, 255);
+  }
+  section.hero header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    padding-bottom: 3.9444444444rem;
+  }
+  section.hero header a {
+    color: rgb(0, 37, 46);
+    font-size: 0.7777777778rem;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: "Open Sans", serif;
+    transition: 0.3s;
+  }
+  section.hero header a:hover {
+    color: rgb(128, 141, 153);
+    background-color: rgb(255, 255, 255);
+  }
+  section.hero h1 {
+    font-size: 2.2222222222rem;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    line-height: 3.3333333333rem;
+    color: rgb(0, 37, 46);
+  }
+  section.hero header + div a {
+    color: rgb(255, 255, 255);
+    font-size: 0.7777777778rem;
+    font-weight: 700;
+    background-color: rgb(255, 82, 191);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: "Open Sans", serif;
+    transition: 0.3s;
+  }
+  section.hero header + div a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 82, 191, 0.7);
+  }
+  section.hero .description {
+    display: flex;
+    gap: 4.2222222222rem;
+  }
+  section.hero .description img {
+    width: 100%;
+  }
+}
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -183,12 +245,11 @@ footer > div:last-child {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.social-media {
+footer .social-media {
   display: flex;
   margin-bottom: 2.7777777778rem;
 }
-.social-media div {
+footer .social-media div {
   width: 1.7777777778rem;
   height: 1.7777777778rem;
   border-radius: 50%;
@@ -197,10 +258,24 @@ footer > div:last-child {
   justify-content: center;
   align-items: center;
 }
-.social-media div:not(:last-of-type) {
+footer .social-media div:not(:last-of-type) {
   margin-right: 0.5555555556rem;
 }
-.social-media i {
+footer .social-media div:hover {
+  border-color: rgb(255, 82, 191);
+  cursor: pointer;
+}
+footer .social-media div:hover i {
+  color: rgb(255, 82, 191);
+}
+footer .social-media i {
   padding: 0.5555555556rem;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 50rem) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */
