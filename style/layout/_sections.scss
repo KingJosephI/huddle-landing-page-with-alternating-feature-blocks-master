@@ -42,7 +42,6 @@ section.hero {
   .description {
     display: flex;
     gap: rem(76);
-
   }
 }
 
@@ -94,10 +93,12 @@ section.community{
 
 
 @media screen and (max-width: rem(900)) {
+
   .description {
     display: flex;
     flex-direction: column;
-    text-align: center;  
+    text-align: center; 
+
   }
 
   section {
